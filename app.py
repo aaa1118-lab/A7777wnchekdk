@@ -354,8 +354,8 @@ SOCKS_VERSION = 5
 #CODEX_BOT_FREE_3DAY
 class Proxy:
     def __init__(self):
-        self.username = "bot"
-        self.password = "bot"
+        self.username = "mimo"
+        self.password = "mimo"
         self.website = f"https://besto-api-enc.vercel.app/Enc/{id}?Key=Besto-K7J9"
     def fake_friend(self, client, id: str):
         if len(id) == 8:
@@ -797,7 +797,7 @@ from concurrent.futures import ThreadPoolExecutor
 def start_bot():
     try:
             proxy = Proxy()
-            t = threading.Thread(target=proxy.run, args=("127.0.0.1", 3000))
+            t = threading.Thread(target=proxy.run, args=("127.0.0.1", 7777))
             t.start()
             threads.append(t)
             for t in threads:
